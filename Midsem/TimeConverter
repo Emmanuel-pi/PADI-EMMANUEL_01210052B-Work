@@ -1,0 +1,46 @@
+package time;
+
+public class TimeConverter {
+    public static double hoursToMinutes(double hours) {
+        return hours * 60;
+    }
+
+    public static double minutesToHours(double minutes) {
+        return minutes / 60;
+    }
+
+    public static double hoursToSeconds(double hours) {
+        return hours * 3600;
+    }
+
+    public static double secondsToHours(double seconds) {
+        return seconds / 3600;
+    }
+
+    public static double minutesToSeconds(double minutes) {
+        return minutes * 60;
+    }
+
+    public static double secondsToMinutes(double seconds) {
+        return seconds / 60;
+    }
+}
+import currency.CurrencyConverter;
+import distance.DistanceConverter;
+import time.TimeConverter;
+
+public class Main {
+    public static void main(String[] args) {
+        // Test Currency Converter
+        System.out.println("10 USD to GH: " + CurrencyConverter.convertDollarToGh(10));
+        System.out.println("10 GH to USD: " + CurrencyConverter.convertGhToDollar(10));
+
+        // Test Distance Converter
+        System.out.println("1000 meters to KM: " + DistanceConverter.meterToKilometer(1000));
+        System.out.println("1 KM to meters: " + DistanceConverter.kilometerToMeter(1));
+
+        // Test Time Converter
+        System.out.println("2 hours to minutes: " + TimeConverter.hoursToMinutes(2));
+        System.out.println("120 minutes to hours: " + TimeConverter.minutesToHours(120));
+    }
+}

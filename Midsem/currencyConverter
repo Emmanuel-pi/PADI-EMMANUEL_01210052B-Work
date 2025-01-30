@@ -1,0 +1,34 @@
+package currency;
+
+public class CurrencyConverter {
+    private static final double USD_TO_GH = 10.0;
+    private static final double EURO_TO_GH = 12.0;
+    private static final double YEN_TO_GH = 0.08;
+    private static final double GH_TO_USD = 0.1;
+    private static final double GH_TO_EURO = 0.083;
+    private static final double GH_TO_YEN = 12.5;
+
+    public static double convertDollarToGh(double dollars) {
+        return dollars * USD_TO_GH;
+    }
+
+    public static double convertEuroToGh(double euros) {
+        return euros * EURO_TO_GH;
+    }
+
+    public static double convertYenToGh(double yen) {
+        return yen * YEN_TO_GH;
+    }
+
+    public static double convertGhToDollar(double ghc) {
+        return ghc * GH_TO_USD;
+    }
+
+    public static double convertGhToEuro(double ghc) {
+        return ghc * GH_TO_EURO;
+    }
+
+    public static double convertGhToYen(double ghc) {
+        return ghc * GH_TO_YEN;
+    }
+}
